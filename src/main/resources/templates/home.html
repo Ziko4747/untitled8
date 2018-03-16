@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <title>KFC sogood</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" th:href = "@{/css/index.css}">
+
+
+</head>
+<body bgcolor="#FFF8F2">
+<img src="images/1.png" width="200" height="80" style="position: absolute;left: 100px; top: 30px">
+<div class="all">
+    <input checked type="radio" name="respond" id="desktop">
+    <article id="slider">
+        <input checked type="radio" name="slider" id="switch1">
+        <input type="radio" name="slider" id="switch2">
+        <input type="radio" name="slider" id="switch3">
+        <input type="radio" name="slider" id="switch4">
+        <input type="radio" name="slider" id="switch5">
+        <div id="slides">
+            <div id="overflow">
+                <div class="image">
+                    <article><img src="images/4.png"></article>
+                    <article><img src="images/5.jpg"></article>
+                    <article><img src="images/6.jpg"></article>
+                    <article><img src="images/7.jpg"></article>
+                    <article><img src="images/8.jpg"></article>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+            <label for="switch5"></label>
+        </div>
+        <div id="active">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+            <label for="switch5"></label>
+        </div>
+    </article>
+</div>
+<div style="position: absolute;left: 550px; top:830px">
+    <div id="wrapper">
+        <div class="item_box">
+            <img src="images/10.jpg">
+            <h3 class="item_title">КЛАССИК®</h3>
+            <p>Цена: <span class="item_price">900</span> тенге</p>
+            <button th:href = "@{/demo/add}" class="add_item" data-id="1">Купить</button>
+        </div>
+        <p id="a"><div class="item_box">
+            <img src="images/11.jpg">
+            <h3 class="item_title">ЗИНГЕР®</h3>
+        <p>Цена: <span class="item_price">900</span> тенге</p>
+        <button th:href = "@{/demo/add}" class="add_item" data-id="2">Купить</button>
+    </div></p>
+    <div class="item_box">
+        <img src="images/12.jpg">
+        <h3 class="item_title">ТВИСТЕР®</h3>
+        <p>Цена: <span class="item_price">800</span> тенге</p>
+        <button th:href = "@{/demo/add}" class="add_item" data-id="3">Купить</button>
+    </div>
+    <div class="item_box">
+        <img src="images/13.png">
+        <h3 class="item_title">БОКСМАСТЕР®</h3>
+        <p>Цена: <span class="item_price">1100</span> тенге</p>
+        <button th:href = "@{/demo/add}" class="add_item" data-id="4">Купить</button>
+    </div>
+    <div class="item_box">
+        <img src="images/14.jpg">
+        <h3 class="item_title">БИГГЕР®</h3>
+        <p>Цена: <span class="item_price">1200</span> тенге</p>
+        <button th:href = "@{/demo/add}" class="add_item" data-id="5">Купить</button>
+    </div>
+    <div class="item_box">
+        <img src="images/15.jpg">
+        <h3 class="item_title">АЙ-ТВИСТЕР®</h3>
+        <p>Цена: <span class="item_price">450</span> тенге</p>
+        <button th:href = "@{/demo/add}" class="add_item" data-id="6">Купить</button>
+    </div>
+    <div class="item_box">
+        <img src="images/16.jpg">
+        <h3 class="item_title">САНДЕРС®</h3>
+        <p>Цена: <span class="item_price">750</span> тенге</p>
+        <button th:href = "@{/demo/add}" class="add_item" data-id="7">Купить</button>
+    </div>
+    <div class="item_box">
+        <img src="images/17.png">
+        <h3 class="item_title">БАСКЕТ® 1</h3>
+        <p>Цена: <span class="item_price">3250</span> тенге</p>
+        <button th:href = "@{/demo/add}" class="add_item" data-id="8">Купить</button>
+    </div>
+    <div class="item_box">
+        <img src="images/18.jpg">
+        <h3 class="item_title">БАСКЕТ® 2</h3>
+        <p>Цена: <span class="item_price">2750</span> тенге</p>
+        <button th:href = "@{/demo/add}" class="add_item" data-id="9">Купить</button>
+    </div>
+    <div class="item_box">
+        <img src="images/19.png">
+        <h3 class="item_title">ТАКОС-САЛЬСА®</h3>
+        <p>Цена: <span class="item_price">800</span> тенге</p>
+        <button th:href = "@{/demo/add}" class="add_item" data-id="10">Купить</button>
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
